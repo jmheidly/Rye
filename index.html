@@ -29,8 +29,8 @@
 
     @font-face {
       font-family: "SweetSansProLight";
-      src: url("sweet-sans-pro-extra-thin.ttf") format("truetype");
-      font-weight: 100;
+      src: url("SweetSansProLight.otf") format("truetype");
+      font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
@@ -109,12 +109,19 @@
 
     @font-face {
       font-family: "LoewNextLight";
-      src: url("LoewNextLight.otf") format("opentype");
-      font-weight: 500;
+      src: url("Loew-regular.otf") format("opentype");
+      font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
 
+    @font-face {
+      font-family: "StemExtraLight";
+      src: url("StemExtraLight.ttf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
 
     @font-face {
       font-family: "CynthoNextExtraBold";
@@ -134,17 +141,17 @@
     }
 
     @font-face {
-      font-family: "fonnts.com-CynthoNextThin";
-      src: url("fonnts.com-CynthoNextThin.otf") format("opentype");
-      font-weight: 100;
+      font-family: "CynthoNextThin";
+      src: url("CynthoNextLight.otf") format("opentype");
+      font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
 
     @font-face {
       font-family: "Satoshi-Light";
-      src: url("Satoshi-Light.otf") format("opentype");
-      font-weight: 100;
+      src: url("Satoshi-Regular.otf") format("opentype");
+      font-weight: 400;
       font-style: normal;
       font-display: swap;
     }
@@ -152,8 +159,8 @@
     body {
       margin: 0;
       padding: 60px;
-      background: #111;
-      color: white;
+      background: white;
+      color: black;
       font-family: sans-serif;
     }
 
@@ -283,7 +290,7 @@
       font-size: 14px;
       letter-spacing: 2px;
       line-height: 1.2;
-      color: #ccc;
+      color: #000;
       font-family: "Inter", sans-serif;
       /* default slogan font */
       font-weight: 300;
@@ -308,6 +315,14 @@
       /* small side padding */
     }
 
+    .slogan-Piepie-tight {
+      justify-content: center;
+      gap: 30px;
+      /* controls spacing between words and dots */
+      padding: 0 1px;
+      /* small side padding */
+    }
+
     .slogan-poppins-tight {
       justify-content: center;
       gap: 25px;
@@ -316,7 +331,7 @@
       /* small side padding */
     }
 
-    .slogan-fonntsCom-CynthoNextThin-tight {
+    .slogan-CynthoNextThin-tight {
       justify-content: center;
       gap: 25px;
       /* controls spacing between words and dots */
@@ -326,9 +341,9 @@
 
     .slogan-Satoshi-Light-tight {
       justify-content: center;
-      gap: 24px;
+      gap: 23px;
       /* controls spacing between words and dots */
-      padding: 0 0px;
+      padding: 0 1px;
       /* small side padding */
     }
 
@@ -344,12 +359,24 @@
 
     .slogan-LoewNextLight-tight {
       justify-content: center;
-      gap: 29px;
+      color: #000;
+      gap: 33px;
       /* controls spacing between words and dots */
       padding: 0 2px;
       padding-top: 10px;
       /* small side padding */
     }
+
+    .slogan-StemExtraLight-tight {
+      justify-content: center;
+      color: #000;
+      gap: 25px;
+      /* controls spacing between words and dots */
+      padding: 0 0px;
+      /* padding-top: 10px; */
+      /* small side padding */
+    }
+
 
     /* @media (max-width: 768px) {
       .slogan {
@@ -373,38 +400,43 @@
 
     .slogan-montserrat {
       font-family: "Montserrat", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
     }
 
     .slogan-poppins {
       font-family: "Poppins", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
+    }
+
+    .slogan-StemExtraLight {
+      font-family: "Stem Extra Light", sans-serif;
+      font-weight: 400;
     }
 
     /* If you want a slogan to match the logo font, you can use these too */
     .slogan-sweetsans {
       font-family: "SweetSansProLight", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
     }
 
     .slogan-BiondiSansW00Light {
       font-family: "BiondiSansW00Light", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
     }
 
-    .slogan-fonntsCom-CynthoNextThin {
-      font-family: "fonnts.com-CynthoNextThin", sans-serif;
-      font-weight: 100;
+    .slogan-CynthoNextThin {
+      font-family: "CynthoNextThin", sans-serif;
+      font-weight: 400;
     }
 
     .slogan-Satoshi-Light {
       font-family: "Satoshi-Light", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
     }
 
     .slogan-LoewNextLight {
       font-family: "LoewNextLight", sans-serif;
-      font-weight: 100;
+      font-weight: 400;
     }
 
 
@@ -543,7 +575,7 @@
         <div class="rye">
           <div class="rye-variant-piepie">RYE</div>
         </div>
-        <div class="slogan slogan-montserrat">
+        <div class="slogan slogan-BiondiSansW00Light slogan-Piepie-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -559,7 +591,7 @@
         <div class="rye">
           <div class="rye-variant-stem">RYE</div>
         </div>
-        <div class="slogan slogan-poppins slogan-poppins-tight">
+        <div class="slogan slogan-StemExtraLight slogan-StemExtraLight-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -591,7 +623,7 @@
         <div class="rye">
           <div class="rye-variant-cyntho">RYE</div>
         </div>
-        <div class="slogan slogan-fonntsCom-CynthoNextThin slogan-fonntsCom-CynthoNextThin-tight">
+        <div class="slogan slogan-CynthoNextThin slogan-CynthoNextThin-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
