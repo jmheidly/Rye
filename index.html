@@ -100,6 +100,23 @@
     }
 
     @font-face {
+      font-family: "BiondiSansW00Light";
+      src: url("BiondiSansW00Light.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "LoewNextLight";
+      src: url("LoewNextLight.otf") format("opentype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+
+    @font-face {
       font-family: "CynthoNextExtraBold";
       src: url("CynthoNext-ExtraBold.ttf") format("truetype");
       font-weight: 800;
@@ -112,6 +129,22 @@
       src: url("Loew Next ExtraBold.otf") format("opentype");
 
       font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "fonnts.com-CynthoNextThin";
+      src: url("fonnts.com-CynthoNextThin.otf") format("opentype");
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Satoshi-Light";
+      src: url("Satoshi-Light.otf") format("opentype");
+      font-weight: 100;
       font-style: normal;
       font-display: swap;
     }
@@ -267,6 +300,57 @@
       /* small side padding */
     }
 
+    .slogan-biondi-tight {
+      justify-content: center;
+      gap: 32px;
+      /* controls spacing between words and dots */
+      padding: 0 1px;
+      /* small side padding */
+    }
+
+    .slogan-poppins-tight {
+      justify-content: center;
+      gap: 25px;
+      /* controls spacing between words and dots */
+      padding: 0 1px;
+      /* small side padding */
+    }
+
+    .slogan-fonntsCom-CynthoNextThin-tight {
+      justify-content: center;
+      gap: 25px;
+      /* controls spacing between words and dots */
+      padding: 0 0px;
+      /* small side padding */
+    }
+
+    .slogan-Satoshi-Light-tight {
+      justify-content: center;
+      gap: 24px;
+      /* controls spacing between words and dots */
+      padding: 0 0px;
+      /* small side padding */
+    }
+
+
+    .slogan-SweetSans-tight {
+      justify-content: center;
+      gap: 25px;
+      /* controls spacing between words and dots */
+      padding: 0 0px;
+      margin-top: -5%;
+      /* small side padding */
+    }
+
+    .slogan-LoewNextLight-tight {
+      justify-content: center;
+      gap: 29px;
+      /* controls spacing between words and dots */
+      padding: 0 2px;
+      padding-top: 10px;
+      /* small side padding */
+    }
+
     @media (max-width: 768px) {
       .slogan {
         font-size: 11px;
@@ -302,6 +386,27 @@
       font-family: "SweetSansProLight", sans-serif;
       font-weight: 100;
     }
+
+    .slogan-BiondiSansW00Light {
+      font-family: "BiondiSansW00Light", sans-serif;
+      font-weight: 100;
+    }
+
+    .slogan-fonntsCom-CynthoNextThin {
+      font-family: "fonnts.com-CynthoNextThin", sans-serif;
+      font-weight: 100;
+    }
+
+    .slogan-Satoshi-Light {
+      font-family: "Satoshi-Light", sans-serif;
+      font-weight: 100;
+    }
+
+    .slogan-LoewNextLight {
+      font-family: "LoewNextLight", sans-serif;
+      font-weight: 100;
+    }
+
 
     .slogan-stem {
       font-family: "StemMedium", sans-serif;
@@ -422,7 +527,7 @@
         <div class="rye">
           <div class="rye-variant-sweetsans">RYE</div>
         </div>
-        <div class="slogan slogan-sweetsans">
+        <div class="slogan slogan-sweetsans slogan-SweetSans-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -454,7 +559,7 @@
         <div class="rye">
           <div class="rye-variant-stem">RYE</div>
         </div>
-        <div class="slogan slogan-poppins">
+        <div class="slogan slogan-poppins slogan-poppins-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -470,7 +575,7 @@
         <div class="rye">
           <div class="rye-variant-biondi">RYE</div>
         </div>
-        <div class="slogan slogan-montserrat slogan-tight">
+        <div class="slogan slogan-BiondiSansW00Light slogan-biondi-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -486,7 +591,7 @@
         <div class="rye">
           <div class="rye-variant-cyntho">RYE</div>
         </div>
-        <div class="slogan slogan-poppins">
+        <div class="slogan slogan-fonntsCom-CynthoNextThin slogan-fonntsCom-CynthoNextThin-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -502,7 +607,7 @@
         <div class="rye">
           <div class="rye-variant-loew">RYE</div>
         </div>
-        <div class="slogan slogan-montserrat">
+        <div class="slogan slogan-LoewNextLight slogan-LoewNextLight-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
@@ -518,7 +623,7 @@
         <div class="rye">
           <div class="rye-variant-satoshi">RYE</div>
         </div>
-        <div class="slogan slogan-poppins">
+        <div class="slogan slogan-Satoshi-Light slogan-Satoshi-Light-tight">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
