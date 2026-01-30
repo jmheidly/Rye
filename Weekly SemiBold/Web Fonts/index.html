@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rye Font Comparison</title>
+
+  <link href="https://db.onlinewebfonts.com/c/936926751a2fd244c6181eb3322e8979?family=Weekly+SemiBold" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Montserrat:wght@100;300&family=Poppins:wght@100;300&display=swap"
+    rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: "SchnebelSlab";
+      src: url("Schnebel Slab Pro.ttf") format("truetype");
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "SweetSansProBold";
+      src: url("sweet-sans-pro-bold.ttf") format("truetype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "SchnebelSlabOTFMedium";
+      src: url("fonnts.com-schnebelslabpro-medium.otf") format("opentype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "KalunyProMediumSlab";
+      src: url("KalunyPro-MediumSlab.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "SanchezNiuRegular";
+      src: url("Latinotype - Sanchez Niu Regular.otf") format("opentype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "BrixSlabMedium";
+      src: url("HvDTrial_BrixSlab-Medium-BF64d58ee4c01ef.otf") format("opentype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "PiepieRegular";
+      src: url("Piepie W01 Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "SatoshiBold";
+      src: url("Satoshi-Bold.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "StemMedium";
+      src: url("Stem Medium.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "BiondiRegular";
+      src: url("Biondi Sans W00 Regular.ttf") format("truetype");
+      font-weight: 500;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "CynthoNextExtraBold";
+      src: url("CynthoNext-ExtraBold.ttf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "LoewNextExtraBold";
+      src: url("Loew Next ExtraBold.otf") format("truetype");
+      font-weight: 800;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    body {
+      margin: 0;
+      padding: 60px;
+      background: #111;
+      color: white;
+      font-family: sans-serif;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      /* 2 logos per row */
+      gap: 60px;
+      align-items: center;
+      justify-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .card {
+      text-align: center;
+      width: 100%;
+    }
+
+    .label {
+      color: #888;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .logo-lockup {
+      display: inline-block;
+      text-align: center;
+    }
+
+    /* Alignment container */
+    .rye {
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Shared Rye sizing */
+    .rye-original,
+    .rye-variant,
+    .rye-variant-otf,
+    .rye-variant-kaluny,
+    .rye-variant-sanchez,
+    .rye-variant-cyntho,
+    .rye-variant-loew {
+      font-size: 140px;
+      letter-spacing: 3px;
+    }
+
+    .rye-variant-sweetsans {
+      font-size: 135px;
+      letter-spacing: 3px;
+    }
+
+    .rye-variant-satoshi {
+      font-size: 140px;
+      letter-spacing: 3px;
+    }
+
+    .rye-variant-piepie {
+      font-size: 120px;
+      letter-spacing: 10px;
+    }
+
+    .rye-variant-stem {
+      font-size: 140px;
+      letter-spacing: 3px;
+    }
+
+    .rye-variant-biondi {
+      font-size: 140px;
+      letter-spacing: 3px;
+    }
+
+    .rye-variant-brix {
+      font-size: 140px;
+      letter-spacing: 3px;
+    }
+
+    .rye-variant-piepie {
+      font-family: "PiepieRegular", sans-serif;
+    }
+
+    .rye-variant-cyntho {
+      font-family: "CynthoNextExtraBold", sans-serif;
+    }
+
+    .rye-variant-loew {
+      font-family: "LoewNextExtraBold", sans-serif;
+    }
+
+    .rye-variant-satoshi {
+      font-family: "SatoshiBold", sans-serif;
+    }
+
+    .rye-variant-stem {
+      font-family: "StemMedium", sans-serif;
+    }
+
+    .rye-variant-biondi {
+      font-family: "BiondiRegular", sans-serif;
+    }
+
+
+    .rye-variant-sweetsans {
+      font-family: "SweetSansProBold", sans-serif;
+    }
+
+    /* Font differences only */
+    .rye-original {
+      font-family: "Weekly SemiBold";
+    }
+
+    .rye-variant {
+      font-family: "SchnebelSlab", serif;
+    }
+
+    .rye-variant-otf {
+      font-family: "SchnebelSlabOTFMedium", serif;
+    }
+
+    .rye-variant-kaluny {
+      font-family: "KalunyProMediumSlab", serif;
+    }
+
+    .rye-variant-sanchez {
+      font-family: "SanchezNiuRegular", serif;
+    }
+
+    .rye-variant-brix {
+      font-family: "BrixSlabMedium", serif;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="grid">
+
+    <div class="card">
+      <div class="label">Current Logo — Weekly SemiBold</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-original">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Schnebel Slab Pro</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Schnebel Slab Pro (OTF Medium)</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-otf">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — KalunyPro Medium Slab</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-kaluny">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Sanchez Niu Regular</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-sanchez">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Brix Slab Medium</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-brix">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Sweet Sans Pro Bold</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-sweetsans">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Piepie W01 Regular</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-piepie">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Stem Medium</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-stem">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Bondu Regular</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-biondi">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Cyntho Next ExtraBold</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-cyntho">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Loew Next ExtraBold</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-loew">RYE</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="label">Variant — Satoshi Bold</div>
+      <div class="logo-lockup">
+        <div class="rye">
+          <div class="rye-variant-satoshi">RYE</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
