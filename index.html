@@ -118,19 +118,12 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      /* 2 logos per row */
       gap: 60px;
       align-items: center;
       justify-items: center;
     }
 
     @media (max-width: 900px) {
-      .grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 700px) {
       .grid {
         grid-template-columns: 1fr;
       }
@@ -160,26 +153,27 @@
       justify-content: center;
     }
 
-    /* Shared Rye sizing */
+    /* Shared base sizing (then override per font if you want) */
     .rye-original,
     .rye-variant,
     .rye-variant-otf,
     .rye-variant-kaluny,
     .rye-variant-sanchez,
+    .rye-variant-brix,
+    .rye-variant-sweetsans,
+    .rye-variant-piepie,
+    .rye-variant-stem,
+    .rye-variant-biondi,
     .rye-variant-cyntho,
-    .rye-variant-loew {
-      font-size: 140px;
-      letter-spacing: 3px;
-    }
-
-    .rye-variant-sweetsans {
-      font-size: 135px;
-      letter-spacing: 3px;
-    }
-
+    .rye-variant-loew,
     .rye-variant-satoshi {
       font-size: 140px;
       letter-spacing: 3px;
+    }
+
+    /* Per-font overrides you already had */
+    .rye-variant-sweetsans {
+      font-size: 135px;
     }
 
     .rye-variant-piepie {
@@ -187,51 +181,7 @@
       letter-spacing: 10px;
     }
 
-    .rye-variant-stem {
-      font-size: 140px;
-      letter-spacing: 3px;
-    }
-
-    .rye-variant-biondi {
-      font-size: 140px;
-      letter-spacing: 3px;
-    }
-
-    .rye-variant-brix {
-      font-size: 140px;
-      letter-spacing: 3px;
-    }
-
-    .rye-variant-piepie {
-      font-family: "PiepieRegular", sans-serif;
-    }
-
-    .rye-variant-cyntho {
-      font-family: "CynthoNextExtraBold", sans-serif;
-    }
-
-    .rye-variant-loew {
-      font-family: "LoewNextExtraBold", sans-serif;
-    }
-
-    .rye-variant-satoshi {
-      font-family: "SatoshiBold", sans-serif;
-    }
-
-    .rye-variant-stem {
-      font-family: "StemMedium", sans-serif;
-    }
-
-    .rye-variant-biondi {
-      font-family: "BiondiRegular", sans-serif;
-    }
-
-
-    .rye-variant-sweetsans {
-      font-family: "SweetSansProBold", sans-serif;
-    }
-
-    /* Font differences only */
+    /* Font-family assignments */
     .rye-original {
       font-family: "Weekly SemiBold";
     }
@@ -255,6 +205,81 @@
     .rye-variant-brix {
       font-family: "BrixSlabMedium", serif;
     }
+
+    .rye-variant-sweetsans {
+      font-family: "SweetSansProBold", sans-serif;
+    }
+
+    .rye-variant-piepie {
+      font-family: "PiepieRegular", sans-serif;
+    }
+
+    .rye-variant-stem {
+      font-family: "StemMedium", sans-serif;
+    }
+
+    .rye-variant-biondi {
+      font-family: "BiondiRegular", sans-serif;
+    }
+
+    .rye-variant-cyntho {
+      font-family: "CynthoNextExtraBold", sans-serif;
+    }
+
+    .rye-variant-loew {
+      font-family: "LoewNextExtraBold", sans-serif;
+    }
+
+    .rye-variant-satoshi {
+      font-family: "SatoshiBold", sans-serif;
+    }
+
+    /* --- SLOGAN --- */
+    .slogan {
+      margin-top: 10px;
+      font-size: 14px;
+      letter-spacing: 2px;
+      line-height: 1.2;
+      color: #ccc;
+      font-family: "Inter", sans-serif;
+      /* default slogan font */
+      font-weight: 300;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Optional slogan font variants (apply per card by adding the class) */
+    .slogan-inter {
+      font-family: "Inter", sans-serif;
+      font-weight: 300;
+    }
+
+    .slogan-montserrat {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 100;
+    }
+
+    .slogan-poppins {
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+    }
+
+    /* If you want a slogan to match the logo font, you can use these too */
+    .slogan-sweetsans {
+      font-family: "SweetSansProBold", sans-serif;
+      font-weight: 700;
+    }
+
+    .slogan-stem {
+      font-family: "StemMedium", sans-serif;
+      font-weight: 500;
+    }
+
+    .slogan-satoshi {
+      font-family: "SatoshiBold", sans-serif;
+      font-weight: 700;
+    }
   </style>
 
 </head>
@@ -269,6 +294,13 @@
         <div class="rye">
           <div class="rye-original">RYE</div>
         </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
@@ -277,6 +309,13 @@
       <div class="logo-lockup">
         <div class="rye">
           <div class="rye-variant">RYE</div>
+        </div>
+        <div class="slogan slogan-montserrat">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
         </div>
       </div>
     </div>
@@ -287,6 +326,13 @@
         <div class="rye">
           <div class="rye-variant-otf">RYE</div>
         </div>
+        <div class="slogan slogan-poppins">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
@@ -295,6 +341,13 @@
       <div class="logo-lockup">
         <div class="rye">
           <div class="rye-variant-kaluny">RYE</div>
+        </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
         </div>
       </div>
     </div>
@@ -305,6 +358,13 @@
         <div class="rye">
           <div class="rye-variant-sanchez">RYE</div>
         </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
@@ -313,6 +373,13 @@
       <div class="logo-lockup">
         <div class="rye">
           <div class="rye-variant-brix">RYE</div>
+        </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
         </div>
       </div>
     </div>
@@ -323,6 +390,13 @@
         <div class="rye">
           <div class="rye-variant-sweetsans">RYE</div>
         </div>
+        <div class="slogan slogan-sweetsans">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
@@ -331,6 +405,13 @@
       <div class="logo-lockup">
         <div class="rye">
           <div class="rye-variant-piepie">RYE</div>
+        </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
         </div>
       </div>
     </div>
@@ -341,14 +422,28 @@
         <div class="rye">
           <div class="rye-variant-stem">RYE</div>
         </div>
+        <div class="slogan slogan-stem">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
     <div class="card">
-      <div class="label">Variant — Bondu Regular</div>
+      <div class="label">Variant — Biondi Regular</div>
       <div class="logo-lockup">
         <div class="rye">
           <div class="rye-variant-biondi">RYE</div>
+        </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
         </div>
       </div>
     </div>
@@ -359,6 +454,13 @@
         <div class="rye">
           <div class="rye-variant-cyntho">RYE</div>
         </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
@@ -368,6 +470,13 @@
         <div class="rye">
           <div class="rye-variant-loew">RYE</div>
         </div>
+        <div class="slogan slogan-inter">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
+        </div>
       </div>
     </div>
 
@@ -376,6 +485,13 @@
       <div class="logo-lockup">
         <div class="rye">
           <div class="rye-variant-satoshi">RYE</div>
+        </div>
+        <div class="slogan slogan-satoshi">
+          <span>Bakes</span>
+          <span>.</span>
+          <span>Coffee</span>
+          <span>.</span>
+          <span>People</span>
         </div>
       </div>
     </div>
