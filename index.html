@@ -28,6 +28,14 @@
     }
 
     @font-face {
+      font-family: "SweetSansProLight";
+      src: url("sweet-sans-pro-extra-thin.ttf") format("truetype");
+      font-weight: 100;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
       font-family: "SchnebelSlabOTFMedium";
       src: url("fonnts.com-schnebelslabpro-medium.otf") format("opentype");
       font-weight: 500;
@@ -101,7 +109,8 @@
 
     @font-face {
       font-family: "LoewNextExtraBold";
-      src: url("Loew Next ExtraBold.otf") format("truetype");
+      src: url("Loew Next ExtraBold.otf") format("opentype");
+
       font-weight: 800;
       font-style: normal;
       font-display: swap;
@@ -147,7 +156,7 @@
 
     /* Alignment container */
     .rye {
-      height: 160px;
+      height: 140px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -237,7 +246,7 @@
 
     /* --- SLOGAN --- */
     .slogan {
-      margin-top: 5px;
+      margin-top: 2px;
       font-size: 14px;
       letter-spacing: 2px;
       line-height: 1.2;
@@ -282,8 +291,8 @@
 
     /* If you want a slogan to match the logo font, you can use these too */
     .slogan-sweetsans {
-      font-family: "SweetSansProBold", sans-serif;
-      font-weight: 700;
+      font-family: "SweetSansProLight", sans-serif;
+      font-weight: 100;
     }
 
     .slogan-stem {
@@ -405,7 +414,7 @@
         <div class="rye">
           <div class="rye-variant-sweetsans">RYE</div>
         </div>
-        <div class="slogan slogan-poppins">
+        <div class="slogan slogan-sweetsans">
           <span>Bakes</span>
           <span>.</span>
           <span>Coffee</span>
